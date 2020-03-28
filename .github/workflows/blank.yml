@@ -17,26 +17,19 @@ jobs:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
+      - uses: actions/checkout@v2
       - name: test things
         run: |
           ls -l
-          pwd
-          whoami
-          hostname
-          echo $GITHUB_WORKSPACE
-          ls -l "$GITHUB_WORKSPACE"
       - name: checks installation pandoc
         run: |
           which pandoc
-          find / -name test-carles.md
-          ls -l /
       - name: creates output
         run: |
           mkdir output
           ls -l
           sh ./build.sh
           ls -lR .
-      - uses: actions/checkout@v2
       - name: sets push subdirectories
         uses: johno/actions-push-subdirectories@master
         env:
