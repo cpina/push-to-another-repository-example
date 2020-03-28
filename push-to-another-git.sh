@@ -22,6 +22,10 @@ cp -r "$FOLDER/." "$CLONE_DIR"
 
 cd "$CLONE_DIR"
 
+echo "After cd $CLONE_DIR"
+
+ls -l
+
 git add .
 git commit --message "Update $NAME from $GITHUB_REPOSITORY"
 git push origin master
