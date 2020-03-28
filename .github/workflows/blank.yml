@@ -24,6 +24,7 @@ jobs:
           whoami
           hostname
           echo $GITHUB_WORKSPACE
+          ls -l "$GITHUB_WORKSPACE"
       - name: checks installation pandoc
         run: |
           which pandoc
