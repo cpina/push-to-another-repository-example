@@ -34,5 +34,6 @@ jobs:
       - name: creates output
         run: |
           mkdir output
-          "$GITHUB_WORKSPACE/build.sh"
+          ls -l
+          bash ./build.sh
           ls -lR .
