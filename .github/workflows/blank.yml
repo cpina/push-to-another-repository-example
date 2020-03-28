@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
-    container: alpine/3.8
+    container: alpine:3.8
     steps:
       - name: executes one line
         run: |
