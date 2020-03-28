@@ -15,9 +15,9 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     steps:
-      - name: My first step
-        uses: docker://alpine:3.8
-
+      - uses: actions/checkout@v2
+      - runs-on: ubuntu-latest
+      - container: alpine/3.8
       - name: executes one line
         run: |
           ls -l
