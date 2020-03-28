@@ -16,9 +16,11 @@ git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.gi
 
 ls -l
 
-find "$CLONE_DIR" | grep -v ".git" | grep -v "^\.*$" | xargs rm -rf # delete all files (to handle deletions in monorepo)
+cd "$CLONE_DIR"
+# find needs to be in the git repository directory
+find . | grep -v ".git" | grep -v "^\.*$" | xargs rm -rf # delete all files (to handle deletions)
 
-cp -r "$FOLDER/." "$CLONE_DIR"
+cp -r "../$FOLDER/." "$CLONE_DIR"
 
 cd "$CLONE_DIR"
 
