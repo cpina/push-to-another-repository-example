@@ -12,7 +12,7 @@ CLONE_DIR=output_clone
 apt-get update && apt-get install git
 apk add --no-cache git
 
-echo git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git" "$CLONE_DIR"
+git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git" "$CLONE_DIR"
 
 ls -l
 
