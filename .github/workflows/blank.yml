@@ -19,6 +19,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: executes one line
+        uses: johno/actions-push-subdirectories@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: output cpina pandoc-test-output
         run: |
           ls -l
           pwd
