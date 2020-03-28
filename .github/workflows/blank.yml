@@ -14,10 +14,10 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    uses: actions/checkout@v2
+    runs-on: ubuntu-latest
+    container: alpine/3.8
     steps:
-      - uses: actions/checkout@v2
-      - runs-on: ubuntu-latest
-      - container: alpine/3.8
       - name: executes one line
         run: |
           ls -l
