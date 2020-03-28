@@ -18,13 +18,14 @@ jobs:
     container: pandoc/latex
     steps:
       - uses: actions/checkout@v2
-      - name: executes one line
+      - name: sets push subdirectories
         uses: johno/actions-push-subdirectories@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: output cpina pandoc-test-output
+      - name: test things
         run: |
           ls -l
           pwd
