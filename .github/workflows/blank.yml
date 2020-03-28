@@ -28,4 +28,5 @@ jobs:
       - name: checks installation pandoc
         run: |
           which pandoc
-          find / -iname readme.md
+          find / -name test-carles.md
+          ls -l /
