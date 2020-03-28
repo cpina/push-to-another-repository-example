@@ -35,5 +35,5 @@ jobs:
         run: |
           mkdir output
           ls -l
-          bash ./build.sh
+          sh ./build.sh
           ls -lR .
