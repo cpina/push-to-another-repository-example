@@ -24,3 +24,9 @@ jobs:
           whoami
           hostname
           echo $GITHUB_WORKSPACE
+      - name: installs pandoc
+        run: |
+          apk add --update-cache pandoc texlive
+      - name: checks installation pandoc
+        run: |
+          which pandoc
