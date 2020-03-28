@@ -9,6 +9,8 @@ GITHUB_REPO="$3"
 
 CLONE_DIR=output_clone
 
+apt-get update && apt-get install git
+
 env
 
 git clone --depth 1 "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$NAME.git" "$CLONE_DIR"
