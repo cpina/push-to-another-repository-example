@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
+      - uses: actions/checkout@v2
       - name: executes one line
         run: |
           ls -l
