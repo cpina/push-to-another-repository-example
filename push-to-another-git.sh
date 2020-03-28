@@ -14,7 +14,7 @@ apk add --no-cache git
 
 env
 
-git clone --depth 1 "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$NAME.git" "$CLONE_DIR"
+git clone --depth 1 "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git" "$CLONE_DIR"
 
 ls -l
 
