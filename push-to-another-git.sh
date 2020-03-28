@@ -21,7 +21,12 @@ find "$CLONE_DIR" | grep -v ".git" | grep -v "^\.*$" | xargs rm -rf # delete all
 
 cp -r "$FOLDER/." "$CLONE_DIR"
 
+cd "$CLONE_DIR"
+
 git add .
 git commit --message "Update $NAME from $GITHUB_REPOSITORY"
 git push origin master
+
+cd ..
 echo "Done!"
+
