@@ -17,8 +17,7 @@ git clone --depth 1 "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$NAME
 
 ls -l
 
-cd "$CLONE_DIR"
-find . | grep -v ".git" | grep -v "^\.*$" | xargs rm -rf # delete all files (to handle deletions in monorepo)
+find "$CLONE_DIR" | grep -v ".git" | grep -v "^\.*$" | xargs rm -rf # delete all files (to handle deletions in monorepo)
 
 cp -r "$FOLDER/." "$CLONE_DIR"
 
