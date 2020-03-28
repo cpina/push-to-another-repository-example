@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 # Inspired from
 #https://github.com/johno/actions-push-subdirectories/blob/master/entrypoint.sh#L10
@@ -11,7 +11,9 @@ CLONE_DIR=output_clone
 
 env
 
-git clone --depth 1 "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$NAME.git" "$CLONE_DIR" &> /dev/null
+git clone --depth 1 "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$NAME.git" "$CLONE_DIR"
+
+ls -l
 
 cd "$CLONE_DIR"
 find . | grep -v ".git" | grep -v "^\.*$" | xargs rm -rf # delete all files (to handle deletions in monorepo)
