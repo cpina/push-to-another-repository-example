@@ -36,7 +36,6 @@ jobs:
       run: |
         ls -l
         pwd
-        which pandoc
         whoami
         hostname
         echo $GITHUB_WORKSPACE
