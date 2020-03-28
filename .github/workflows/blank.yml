@@ -39,3 +39,4 @@ jobs:
         which pandoc
         whoami
         hostname
+        echo $GITHUB_WORKSPACE
