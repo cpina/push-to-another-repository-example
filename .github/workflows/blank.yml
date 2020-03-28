@@ -24,6 +24,10 @@ jobs:
           whoami
           hostname
           echo $GITHUB_WORKSPACE
+      - name: test connectivity
+        run: |
+          ping -c 5 8.8.8.8
+          ping -c 5 pina.cat
       - name: installs pandoc
         run: |
           apk add --update-cache pandoc texlive
