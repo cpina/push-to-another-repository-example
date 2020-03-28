@@ -31,3 +31,11 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+
+    - name: Run a test
+      run: |
+        ls -l
+        pwd
+        which pandoc
+        whoami
+        hostname
