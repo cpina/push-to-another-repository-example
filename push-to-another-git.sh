@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/sh -ex
 
 # Inspired from
 #https://github.com/johno/actions-push-subdirectories/blob/master/entrypoint.sh#L10
@@ -23,16 +23,14 @@ cd "$CLONE_DIR"
 # find needs to be in the git repository directory
 find . | grep -v ".git" | grep -v "^\.*$" | xargs rm -rf # delete all files (to handle deletions)
 
-cp -r "../$FOLDER/." "$CLONE_DIR"
-
-cd "$CLONE_DIR"
+cp -r "../$FOLDER"/* .
 
 echo "After cd $CLONE_DIR"
 
 ls -la
 
 git add .
-git commit --message "Update $NAME from $GITHUB_REPOSITORY"
+git commit --message "Update from $GITHUB_REPOSITORY"
 git push origin master
 
 cd ..
