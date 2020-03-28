@@ -16,7 +16,7 @@ jobs:
   build:
     steps:
       - name: My first step
-        runs-on: docker://alpine:3.8
+        uses: docker://alpine:3.8
 
       - name: executes one line
         run: |
