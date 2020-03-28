@@ -31,3 +31,8 @@ jobs:
           which pandoc
           find / -name test-carles.md
           ls -l /
+      - name: creates output
+        run: |
+          mkdir output
+          ./build.sh
+          ls -lR .
