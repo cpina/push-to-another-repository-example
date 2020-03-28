@@ -26,14 +26,10 @@ jobs:
           which pandoc
       - name: creates output
         run: |
-          mkdir -p output/output
+          mkdir output
           ls -l
           sh ./build.sh
           ls -lR .
-      - name: sets push subdirectories
-        uses: johno/actions-push-subdirectories@master
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          args: output cpina pandoc-test-output
+      - name: push directory
+        run: |
+          sh ./push-to-another-git.sh output/ cpina pandoc-test-output
