@@ -24,7 +24,7 @@ cd "$CLONE_DIR"
 
 echo "After cd $CLONE_DIR"
 
-ls -l
+ls -la
 
 git add .
 git commit --message "Update $NAME from $GITHUB_REPOSITORY"
