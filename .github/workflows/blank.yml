@@ -2,34 +2,20 @@
 
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
       - uses: actions/checkout@v2
-      - name: test things
-        run: |
-          ls -l
-      - name: checks installation pandoc
-        run: |
-          which pandoc
       - name: creates output
-        run: |
-          mkdir output
-          ls -l
-          sh ./build.sh
-          ls -lR .
+        run:  sh ./build.sh
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
         env:
@@ -38,8 +24,4 @@ jobs:
           source-directory: 'output'
           destination-github-username: 'cpina'
           destination-repository-name: 'pandoc-test-output'
-#      - name: push directory
-#        env:
-#          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-#        run: |
-#          sh ./push-to-another-git.sh output/ cpina pandoc-test-output
+          git-user-email: carles@pina.cat
