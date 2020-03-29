@@ -1,5 +1,5 @@
 ---
-title: "Test with Pandoc"
+title: "Test with Pandoc2"
 ---
 
 # Hello2
