@@ -1,12 +1,6 @@
 ---
-title: "Test with Pandoc2"
+title: "Test with Pandoc using Github Actions"
 ---
 
-# Hello2
-This is the first test second part, third part.
-
-Good morning, good are you?
-
-Now it's the afternoon
-
-Time!!
+# Hello
+This repository is an example on how to use a Github Action.
