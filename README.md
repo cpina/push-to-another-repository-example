@@ -2,7 +2,3 @@
 
 # pandoc-test
 Testing Github actions with Pandoc
-
-
-
-
