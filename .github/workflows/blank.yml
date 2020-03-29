@@ -30,8 +30,14 @@ jobs:
           ls -l
           sh ./build.sh
           ls -lR .
-      - name: push directory
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        run: |
-          sh ./push-to-another-git.sh output/ cpina pandoc-test-output
+      - name: Pushes to another repository
+        uses: actions/...
+        with:
+          source: 'output'
+          destination: 'test'
+          destination2: 'test'
+#      - name: push directory
+#        env:
+#          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#        run: |
+#          sh ./push-to-another-git.sh output/ cpina pandoc-test-output
