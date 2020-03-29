@@ -32,6 +32,8 @@ jobs:
           ls -lR .
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@v2
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'output'
           destination-github-username: 'cpina'
