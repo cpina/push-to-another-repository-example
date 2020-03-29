@@ -31,7 +31,7 @@ jobs:
           sh ./build.sh
           ls -lR .
       - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository
+        uses: cpina/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
