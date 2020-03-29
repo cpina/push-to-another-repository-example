@@ -31,7 +31,7 @@ jobs:
           sh ./build.sh
           ls -lR .
       - name: Pushes to another repository
-        uses: actions/...
+        uses: actions/github-action-push-to-another-repository@v1
         with:
           source: 'output'
           destination: 'test'
