@@ -10,4 +10,4 @@ pandoc -s main.md -o output/main.odt
 pandoc -s main.md -o output/main.docx
 
 cp index.html output/
-cp README.example.md output/
+cp README.output.md output/
