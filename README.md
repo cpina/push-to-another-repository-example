@@ -1,4 +1,4 @@
 ![CI](https://github.com/cpina/pandoc-test/workflows/CI/badge.svg)
 
-# pandoc-test
+# push-to-another-repository-example
 Testing Github actions with Pandoc
