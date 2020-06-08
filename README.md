@@ -2,4 +2,4 @@
 
 # push-to-another-repository-example
 Testing Github actions with Pandoc.
-Another test
+Another test2
