@@ -24,4 +24,4 @@ jobs:
           source-directory: 'output'
           destination-github-username: 'cpina'
           destination-repository-name: 'push-to-another-repository-output'
-          git-user-email: carles@pina.cat
+          git-user-email: carles2@pina.cat
