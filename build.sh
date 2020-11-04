@@ -1,5 +1,7 @@
 #!/bin/sh
 
+apk add ruby-mustache
+
 mkdir output
 
 pandoc -s main.md -o output/main.html
