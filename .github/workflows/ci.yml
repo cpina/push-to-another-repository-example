@@ -29,6 +29,4 @@ jobs:
           user-email: carles3@pina.cat
           commit-message: See ORIGIN_COMMIT
       - name: test
-        env:
-          directory: ${{ DESTINATION_CLONED_DIRECTORY }}
-        run:  echo "$directory"
+        run:  echo $DESTINATION_CLONED_DIRECTORY
