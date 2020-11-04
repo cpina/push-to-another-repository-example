@@ -30,6 +30,4 @@ jobs:
           user-email: carles3@pina.cat
           commit-message: See ORIGIN_COMMIT
       - name: Test get variable exported by push-to-another-repository
-        with:
-          DIRECTORY: ${{ steps.push_directory.outputs.DESTINATION_CLONED_DIRECTORY }}
-        run: echo $DIRECTORY
+        run: echo $DESTINATION_CLONED_DIRECTORY
