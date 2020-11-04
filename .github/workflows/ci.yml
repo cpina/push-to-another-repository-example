@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install mustache (to update the date)
-        run:  sudo apt-get install --no-install-recommends --yes --quiet ruby-mustache
+        run:  apk add ruby-mustache
       - name: creates output
         run:  sh ./build.sh
       - name: Pushes to another repository
