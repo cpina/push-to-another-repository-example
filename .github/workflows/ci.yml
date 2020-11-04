@@ -19,7 +19,7 @@ jobs:
       - name: creates output
         run:  sh ./build.sh
       - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@master
+        uses: cpina/github-action-push-to-another-repository@output-checkout
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
@@ -29,4 +29,4 @@ jobs:
           user-email: carles3@pina.cat
           commit-message: See ORIGIN_COMMIT
       - name: test
-        run:  find
+        run:  echo "${DESTINATION_CLONED_DIRECTORY}"
