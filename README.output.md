@@ -7,4 +7,4 @@ Using this Github Action: https://github.com/marketplace/actions/push-directory-
 
 Also available on: https://cpina.github.io/pandoc-test-output/
 
-Generated at: {{ generated_at }}
+Generated at: {{ generated_at }}.

@@ -9,7 +9,7 @@ pandoc -s main.md -o output/main.epub
 pandoc -s main.md -o output/main.odt
 pandoc -s main.md -o output/main.docx
 
-echo "generated_at: $(date)" >> variables.yml
+echo "generated_at: $(date)" > variables.yml
 
-mustache variables.yml index.output.html >> output/index.html
-mustache variables.yml README.output.md output/README.md
+mustache variables.yml index.output.html > output/index.html
+mustache variables.yml README.output.md > output/README.md
