@@ -10,3 +10,5 @@ It has a Markdown file and using a Github Action uses Pandoc to generate HTML, P
 Now it has stricter shell options.
 
 And now... names in entrypoint.sh and names in action.yml are aligned.
+
+Testing now with the COMMIT_MESSAGE (default)
