@@ -31,4 +31,4 @@ jobs:
       - name: test
         env:
           directory: ${{ DESTINATION_CLONED_DIRECTORY }}
-        run:  echo "${directory}"
+        run:  echo "$directory"
