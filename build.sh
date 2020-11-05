@@ -1,6 +1,10 @@
 #!/bin/sh
 
 mkdir output
+echo "test" > output/test
+exit
+
+mkdir output
 
 pandoc -s main.md -o output/main.html
 pandoc main.md -o output/main_bare.html
