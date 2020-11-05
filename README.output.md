@@ -5,6 +5,6 @@ https://github.com/cpina/push-to-another-repository-example
 
 Using this Github Action: https://github.com/marketplace/actions/push-directory-to-another-repository
 
-Also available on: https://cpina.github.io/pandoc-test-output/
+Also available on: https://cpina.github.io/push-to-another-repository-output/
 
 Generated at: {{ generated_at }}.
