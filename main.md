@@ -12,3 +12,5 @@ Now it has stricter shell options.
 And now... names in entrypoint.sh and names in action.yml are aligned.
 
 Testing now with the COMMIT_MESSAGE (default)
+
+Now testing with --set-upstream
