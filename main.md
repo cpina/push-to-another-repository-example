@@ -17,4 +17,4 @@ Now testing with --set-upstream
 
 Now testing after https://github.com/cpina/github-action-push-to-another-repository/pull/41
 
-Now testing after adding support for github hosts other than github.com (again)
+Now testing after adding support for github hosts other than github.com (again, 2)
