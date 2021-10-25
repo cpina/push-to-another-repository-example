@@ -14,3 +14,5 @@ And now... names in entrypoint.sh and names in action.yml are aligned.
 Testing now with the COMMIT_MESSAGE (default)
 
 Now testing with --set-upstream
+
+Now testing after https://github.com/cpina/github-action-push-to-another-repository/pull/41
