@@ -11,8 +11,6 @@ pandoc -s main.md -o output/main.docx
 
 date > output/.build_date.txt
 
-echo "A test file" > output/test-file.txt
-
 echo "generated_at: $(date)" > variables.yml
 
 mustache variables.yml index.output.html > output/index.html
