@@ -30,6 +30,6 @@ jobs:
           user-email: carles3@pina.cat
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: main
-          target-directory: output_new
+          # target-directory: output_new
       - name: Test get variable exported by push-to-another-repository
         run: echo $DESTINATION_CLONED_DIRECTORY
