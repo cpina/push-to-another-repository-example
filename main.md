@@ -24,3 +24,5 @@ Testing that the check for a branch works... if it exist
 Testing after a small change in main (GitHub repository username)
 
 Another test just in case
+
+Another test with the right branch.
