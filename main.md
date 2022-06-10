@@ -26,3 +26,5 @@ Testing after a small change in main (GitHub repository username)
 Another test just in case
 
 Another test with the right branch.
+
+Fix / else / then is tested
