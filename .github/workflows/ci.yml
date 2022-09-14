@@ -11,12 +11,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: pandoc/latex
     steps:
       - uses: actions/checkout@v2
-      #- name: Install mustache (to update the date)
-      #  run:  apk add ruby && gem install mustache
-      #- name: creates output
-      #  run:  sh ./build.sh
+      - name: Install mustache (to update the date)
+        run:  apk add ruby && gem install mustache
+      - name: creates output
+        run:  sh ./build.sh
       - name: debugging (files are kept between steps)
         run: pwd; ls -l
       - name: Pushes to another repository
