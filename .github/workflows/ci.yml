@@ -18,6 +18,8 @@ jobs:
         run:  apk add ruby && gem install mustache
       - name: creates output
         run:  sh ./build.sh
+      - name: debugging (files are kept between steps)
+        run: pwd; ls -l
       - name: Pushes to another repository
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
