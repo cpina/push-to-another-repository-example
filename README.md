@@ -7,4 +7,4 @@ See the github-action repository: https://github.com/cpina/github-action-push-to
 
 The output repository: https://github.com/cpina/push-to-another-repository-output
 
-Tested on 2022-04-13 09:56
+Tested on 2023-12-01 23:50
